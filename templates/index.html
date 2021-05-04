@@ -1,0 +1,107 @@
+{% extends'layout.html' %}
+
+{% block head_content%}
+ <title> Campanaña Nanda </title>
+{% endblock %}
+
+
+{% block container %}
+<!-- nav bar -->
+{% include 'nav.html'%}
+
+<div class="container">
+
+    <div class="header">
+        <div class="bd-docs-content bd-content algolia-content ">
+            <section>          
+                <div class="columns is-mobile">
+                    <div class="column is-two-thirds-tablet fa-border">
+
+                        <!-- title -->
+                        <h2 class="title algolia-lvl0"> Lorep ipsun </h2>
+
+                        <!-- left column -->
+                        <article class="message is-info">
+                            <div class="message-body">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                            </div>
+                        </article>
+                        <!-- borrar -->
+                        <figure>
+                            <img class="img fa-align-center"
+                                src="{{ url_for('static', filename='img/Captura de pantalla 2021-04-29 a las 17.41.10.png') }}" 
+                                alt="photo nanda" height="300" width="240"
+                            >
+                        </figure>
+        
+                        <article class="art">
+                            <p>
+                                A principios de 2020 comenzo a sufir dolencias de espalda. 
+                                En plena emergencia mundial por la pandemia, sus dolores se hiceron insoportables.
+                                Un día Nada se acosto en su terraza a tomar el sol, 
+                            </p>
+                    
+                            <p>
+                                Esto una campanaña para encontrar un donante de médula ósea compatible con Nanda.
+                                A pesar que vive en España donde la medicina es puntera en el mundo sus mayores posibilides estan en donantes latinos debido que tiene una carga proteica
+                                mas cercanas a ser compatibles con las de Nanda.
+
+                                Hola familia. la hermana de David (mi novio) 
+                                está enferma tiene leucemia tiene 31 años y la única manera de salvarse es con un 
+                                transplante de médula y debido a que es latina en el banco de pacientes europeo 
+                                no hay donantes con su misma carga proteica, 
+                                por lo que escribo es que se hagan donantes de médula no es un proceso 
+                                invasivo ñ, es como si fueran a donar sangre(si llegan a ser compatibles) 
+                                por favor tomen consciencia capaz en sus manos tengan la capacidad de salvar una vida. 
+                                No tenemos cultura de donar pero se los pido como favor sólo les tomará 20 minutos 
+                                ir a el centro más cercano o algun autobús de donación e inscribirse para 
+                                DONANTE DE MÉDULA igualmente haremos una pagina para difundir es su única 
+                                esperanza encontrar un donante
+                            </p>
+                        </article>
+                        
+                        <article class="message is-info">
+                            <div class="message-body">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                            </div>
+                        </article>
+
+                        
+
+                        <figure >
+                            <img 
+                                src="{{ url_for('static', filename='img/Captura de pantalla 2021-04-29 a las 18.00.13.png') }}" 
+                                alt="photo nanda" height="300" width="240"
+                            >
+                    </div>
+
+                    <!-- pictures in the rigth column -->
+                    <div class="column is-three-quarters-mobile fa-border">
+                        <figure>
+                            <img
+                                src="{{ url_for('static', filename='img/Captura de pantalla 2021-04-29 a las 17.41.10.png') }}" 
+                                alt="photo nanda" height="300" width="240"
+                            >
+                        </figure>
+
+                        <figure >
+                            <img 
+                                src="{{ url_for('static', filename='img/Captura de pantalla 2021-04-29 a las 18.00.13.png') }}" 
+                                alt="photo nanda" height="300" width="240"
+                            >
+                        </figure>
+                    </div>
+                </div>
+                
+            </section>
+        </div>  
+        
+    </div>
+    
+    
+</div>
+
+{% include 'comment_box.html'%}
+
+{% endblock %}
+

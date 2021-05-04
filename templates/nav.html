@@ -1,0 +1,46 @@
+<div class=""> 
+    <nav class="tabs is-toggle is-toggle-rounded is-medium is-left mb-5" aria-label="breadcrumbs">
+        <ul>
+            {% if request.path =='/'%} 
+                <li class="is-active" > 
+            {% else %}  
+                <li>
+            {% endif %} 
+
+            <a href="{{ url_for('index') }}">
+                <span class="icon is-small">
+                  <i class="fas fa-clinic-medical" aria-hidden="true"></i>
+                </span>
+                <span>Inicio</span>
+            </a></li>
+                    
+
+            {% if request.path =='/como-ayudar'%} 
+                <li class="is-active" > 
+            {%else%}
+                <li>
+            {% endif %}
+
+            <a href="{{ url_for('how_to_help') }}">
+                <span class="icon is-small">
+                  <i class="fas fa-hand-holding-medical" aria-hidden="true"></i>
+                </span>
+                <span>Como ayudar</span>
+            </a> 
+     
+            
+            {% if request.path =='#'%} 
+                <li class="is-active" > 
+            {%else%}
+            <li>
+            {% endif %}
+            <a href="{{ url_for('how_to_help') }}">
+                <span class="icon is-small">
+                  <i class="fas fa-book-medical" aria-hidden="true"></i>
+                </span>
+                <span>Un poco mas de Nanda</span>
+            </a> 
+            
+        </ul>
+      </nav>
+</div>
