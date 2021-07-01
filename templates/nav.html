@@ -1,46 +1,40 @@
-<div class=""> 
-    <nav class="tabs is-toggle is-toggle-rounded is-medium is-left mb-5" aria-label="breadcrumbs">
-        <ul>
-            {% if request.path =='/'%} 
-                <li class="is-active" > 
-            {% else %}  
-                <li>
-            {% endif %} 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-lg-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-end mb-2 mb-lg-0">
+        <!-- inicio -->
+        <li class="nav-item ms-2">
+          <a class="nav-link {% if request.path =='/'%} active" aria-current="page {% endif %}" href="{{ url_for('index') }}">
+            <span class="icon is-small">
+              <i class="fas fa-clinic-medical" aria-hidden="true"></i>
+            </span>
+            <span>Alejandra</span>
+          </a>
+        </li>
 
-            <a href="{{ url_for('index') }}">
-                <span class="icon is-small">
-                  <i class="fas fa-clinic-medical" aria-hidden="true"></i>
-                </span>
-                <span>Inicio</span>
-            </a></li>
-                    
+        <!-- como ayudar -->
+        <li class="ms-2 ms-lg-3 nav-item">
+          <a class="nav-link {% if request.path =='/como-ayudar'%} active {% endif %}" href="{{ url_for('how_to_help') }}">
+            <span class="icon is-small">
+              <i class="fas fa-hand-holding-medical" aria-hidden="true"></i>
+            </span>
+            <span>Como ayudar</span>
+          </a>
+        </li>
 
-            {% if request.path =='/como-ayudar'%} 
-                <li class="is-active" > 
-            {%else%}
-                <li>
-            {% endif %}
-
-            <a href="{{ url_for('how_to_help') }}">
-                <span class="icon is-small">
-                  <i class="fas fa-hand-holding-medical" aria-hidden="true"></i>
-                </span>
-                <span>Como ayudar</span>
-            </a> 
-     
-            
-            {% if request.path =='#'%} 
-                <li class="is-active" > 
-            {%else%}
-            <li>
-            {% endif %}
-            <a href="{{ url_for('how_to_help') }}">
-                <span class="icon is-small">
-                  <i class="fas fa-book-medical" aria-hidden="true"></i>
-                </span>
-                <span>Un poco mas de Nanda</span>
-            </a> 
-            
-        </ul>
-      </nav>
-</div>
+        <!-- un poco mas de nanda -->
+        <li class="nav-item ms-2">
+          <a class="nav-link {% if request.path ==' '%} active {% endif %}" href="#">
+            <span class="icon is-small">
+              <i class="fas fa-book-medical" aria-hidden="true"></i>
+            </span>
+            <span>Un poco mas de Nanda</span>
+          </a>
+        </li>
+      </ul>
+    </div>  
+  </div>
+</nav>
