@@ -1,7 +1,7 @@
 
 
 body{
-    background-color: #61D7A4;
+    background-color: #a7e4ca;
 }
 
 footer{
@@ -36,9 +36,7 @@ footer{
     color: black;
 } 
 
-.post1{
-    height: 10rem;
-}
+
 blockquote{
     height: 30vw;
 }
@@ -51,8 +49,12 @@ blockquote{
 }
 
 .arrow{
-    font-size: 8rem;
+    font-size: 7rem;
 }
 .arrow i{
     color: orangered;
+}
+
+#more-info{
+    margin-top: 8rem;
 }

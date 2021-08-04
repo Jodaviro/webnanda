@@ -32,8 +32,9 @@
   
 
 
-<div class="container" >
-  <section id="main-content">
+
+<section id="main-content">
+  <div class="container" >
     <div class="row ">
       <div class="col-md-6 mt-5">
         <p class="fs-4 text">
@@ -50,8 +51,8 @@
           doloroso, pero donar médula ósea es muy sencillo, casi tan simple
           como donar sangre, no es doloroso y estás salvando una vida.
         </p>
-        <div class="col d-none d-lg-block arrow text-center">
-          <a href="">
+        <div class="col d-none d-md-block arrow text-center">
+          <a href="#more-info">
             <i class="fas fa-chevron-down"></i>
           </a>
         </div>
@@ -65,20 +66,34 @@
         </div>
       </div>
     </div>
-  </section>
-</div>
+  </div>
+</section>
 
 
+<section id="more-info">
+  <div class="container mt-5">
+    <div class="row" >
+        <div class="col-md-6 col-lg-5">
+          {% include 'post_2.html' %}
+        </div>
 
-
-          <!-- <p>
+        <div class="col-md-6">
+          <p class="fs-5 textr">
             Aquí encontrarás toda la información para saber cómo hacerte donante
             y de cómo sería el procedimiento. También si quieres conocer un poco
             más sobre mi historia o si eres paciente con leucemia en mi misma
             situación, puedes escribirme, pues estoy creando un grupo de apoyo
             para que podamos motivarlos y tener ese rayito de luz y esperanza
             del cual engancharnos. Si estás aquí ya has dado el primer paso, así
-            que sigamos.
+            que <a class="btn btn-secondary" href="{{ url_for('how_to_help') }}">sigamos <i class="fas fa-hand-holding-medical" aria-hidden="true"></i></a>
+          </p>
+        </div>
+      </div>
+  </div>
+</section>
+
+          <!-- <p>
+            
           </p>
           <p>
             Esto una campanaña para encontrar un donante de médula ósea
@@ -110,5 +125,5 @@
     </div>
   </div>
 </div>
-
+       
 {% endblock %}
